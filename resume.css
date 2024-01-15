@@ -1,0 +1,156 @@
+body{
+    background-color: black;
+    color: white; 
+    font-family: Arial, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Helvetica";
+    font-size: 18px;
+    
+}
+
+.top-panel-horizontal{
+    display: flex;
+    justify-content: center;
+    
+    /* lets test the height needed */
+    height: 280px;
+    margin-top: 30px;
+
+}
+
+.profile-pic img {
+    height: 220px;
+    display: block;
+    border-radius: 50%;
+    border: 6px solid #ffa500;
+    margin-top: 20px;
+}
+
+
+
+h2{
+    color:#ffa500 ;
+}
+
+.first-name{
+    font-family: "Audiowide";
+
+    font-size: 64px;
+    padding-top: 3px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    padding-bottom:1px ;
+}
+hr{
+    margin-left: 360px;
+    width: 1340px;
+}
+
+h3.job-profile{
+    margin-top: 1px;
+    margin-left: 10px;
+    font-size: 26px;
+    /* text-align: right; */
+    /* margin-right: 160px; */
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+p.about{
+    max-width: 950px;
+    margin-left: 10px;
+    
+    font-size: 18px;
+}
+
+.intro{
+    margin-left: 15px;
+}
+
+.mob-about{
+    visibility: collapse;
+}
+
+.experience{
+    margin-left: 430px;
+}
+
+.experience-list{
+    max-width: 1200px;
+}
+
+
+/*************** mobile ****************/
+@media screen and (max-width: 481px){
+    
+
+
+    .top-panel-horizontal{
+    display: flex;
+    justify-content: center;
+    
+    /* lets test the height needed */
+    height: 100px;
+    /* margin-top: 30px; */
+    
+    }
+
+    .profile-pic img {
+        height: 80px;
+        display: block;
+        border-radius: 50%;
+        border: 4px solid #ffa500;
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+    
+    .first-name{
+        font-size: 24px;
+    }
+
+    h3.job-profile{
+        font-size: 18px;
+        margin-left: 2px;
+        text-underline-offset: 2px;
+    }
+    
+    
+    .mob-about{
+        visibility: visible;
+        margin: auto;
+        /* padding: 0px,0px,0px,0px; */
+    }
+
+    .about{
+        visibility: collapse;
+    }
+  
+    .mob-about{
+        margin-left: 12px;
+    }
+
+    h2.mob-about > p{
+        font-size: 10px;
+    }
+
+    h2.orange{
+        margin-left: 5px;
+    }
+
+    .experience {
+        margin-left: 5px; /* Adjust the margin as needed */
+        max-width: 88%;
+    }
+    .experience-list{
+        font-size: 15px;
+        max-width: 85%;
+        /* line-height: 2em; */
+    }
+    .experience-list-items{
+        margin-bottom: 10px;
+    }
+    .mob-about-content{
+        font-size: 14px;
+        margin-right: 5%;
+    }
+  }  
