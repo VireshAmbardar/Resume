@@ -180,4 +180,18 @@ a.download-link:hover{
         font-size: 14px;
         margin-right: 5%;
     }
+    a.download-link{
+        visibility: collapse;
+    }
+    .mob-download-link {
+        text-decoration: none;
+        display: block;
+        text-align: right;
+        padding-right: 10%;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    
   }  
