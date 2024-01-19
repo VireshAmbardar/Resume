@@ -271,6 +271,9 @@
             <textarea class="form-control" style="resize: none;" id="message" name="message" rows="4"  placeholder="Your Message" required></textarea>
           </div>
           <button class="btn btn-primary mt-2" type="submit">Send</button>
+          <button class="btn  mt-2" type="button"  onclick="openWhatsApp()">
+            <img src="icons8-whatsapp.gif" alt="Animated GIF" style="background-color: transparent;">
+          </button>
         </form>
 
         </div>
@@ -306,5 +309,18 @@
     <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
     <script src="scripts/aos.js?ver=1.2.0"></script>
     <script src="scripts/main.js?ver=1.2.0"></script>
+    <script>
+      function openWhatsApp() {
+        // Replace the phone number and message with your desired values
+        var phoneNumber = "9149869687";
+        var message = "Hello, ";
+    
+        // Construct the WhatsApp URL
+        var whatsappURL = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+    
+        // Open the WhatsApp URL in a new tab/window
+        window.open(whatsappURL);
+      }
+    </script>
   </body>
 </html>
