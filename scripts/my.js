@@ -19,6 +19,13 @@ function openImageOverlay2(event) {
     document.getElementById("overlay2").style.display = "flex";
 }
 
+function openImageOverlay3(event) {
+    event.preventDefault(); // Prevent the default link behavior
+    var overlay = document.getElementById("overlay3");
+    overlay.classList.add("show");
+    document.getElementById("overlay3").style.display = "flex";
+}
+
 function closeImageOverlay() {
     document.getElementById("overlay").style.display = "none";
 }
@@ -31,3 +38,6 @@ function closeImageOverlay2() {
     document.getElementById("overlay2").style.display = "none";
 }
 
+function closeImageOverlay3() {
+    document.getElementById("overlay3").style.display = "none";
+}
