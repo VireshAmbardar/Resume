@@ -1,3 +1,15 @@
+function openWhatsApp() {
+    // Replace the phone number and message with your desired values
+    var phoneNumber = "9149869687";
+    var message = "Hello, ";
+
+    // Construct the WhatsApp URL
+    var whatsappURL = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+
+    // Open the WhatsApp URL in a new tab/window
+    window.open(whatsappURL);
+  }
+
 function openImageOverlay(event) {
     event.preventDefault(); // Prevent the default link behavior
     var overlay = document.getElementById("overlay");
